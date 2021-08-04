@@ -2,7 +2,7 @@
 
 /* подключаем плагины */
 const gulp = require('gulp');
-const scss = require('gulp-sass');
+const scss = require('gulp-sass')(require('sass'));
 const fileInclude = require('gulp-file-include');
 const debug = require('gulp-debug');
 const bs = require('browser-sync').create();
