@@ -1,0 +1,15 @@
+/* Icon */
+
+.icon {
+	&_nav {
+		stroke: var(--basic-black);
+	}
+	&_nav-menu,
+	&_nav-open &_nav-cross {
+		display: block;
+	}
+	&_nav-cross,
+	&_nav-open &_nav-menu {
+		display: none;
+	}
+}

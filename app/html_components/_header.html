@@ -1,15 +1,18 @@
 <header class="header">
     <div class="container container_header">
         <a class="logo" href="index.html">
-            <svg class="icon icon-logo">
+            <svg class="icon icon_logo" width="32" height="32">
                 <use xlink:href="img/sprite.svg#icon-logo"></use>
             </svg>
         </a>
-        <svg class="icon icon-burger">
-            <use xlink:href="img/sprite.svg#icon-burger"></use>
-        </svg>
         <nav class="nav nav_header">
-            <ul class="list list_header">
+            <button class="button button_nav" type="button" aria-expanded="false" aria-controls="list_header">
+            <svg class="icon icon_nav" aria-hidden="true" width="32" height="32">
+                <use class="icon_nav icon_nav-menu" href="img/sprite.svg#menu"></use>
+                <use class="icon_nav icon_nav-cross" href="img/sprite.svg#cross"></use>
+            </svg>
+            </button>
+            <ul class="list list_header" id="list_header">
                 <li class="list_item">
                     <a class="link link_header" href="catalog.html">Каталог</a>
                 </li>

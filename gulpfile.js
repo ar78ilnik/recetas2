@@ -37,12 +37,6 @@ function toWebp() {
         .pipe(gulp.dest('dist/img'))
 }
 
-function svg() {
-    return gulp.src('app/img/**/*.svg')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'))
-}
-
 function jpg() {
     return gulp.src('app/img/**/*.jpg')
         .pipe(imagemin())
@@ -120,7 +114,7 @@ function watch() {
     gulp.watch('app/scss/*.scss', style);
     gulp.watch('app/js/**/*.js', js);
     gulp.watch('app/fonts/*.{woff, woff2}', copy);
-    gulp.watch('app/img/**/*.*', svg, jpg, toWebp, toPng, sprite);
+    gulp.watch('app/img/**/*.*', jpg, toWebp, toPng, sprite);
 };
 
 function server() {
@@ -133,11 +127,10 @@ function server() {
     bs.watch('app/img/**/*.*').on('change', bs.reload);
 };
 
-const build = gulp.series(clean, copy, svg, jpg, toWebp, toPng, sprite, style, js, html, gulp.parallel(watch, server));
+const build = gulp.series(clean, copy, jpg, toWebp, toPng, sprite, style, js, html, gulp.parallel(watch, server));
 
 exports.clean = clean;
 exports.html = html;
-exports.svg = svg;
 exports.jpg = jpg;
 exports.toWebp = toWebp;
 exports.toPng = toPng;
