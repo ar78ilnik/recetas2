@@ -2,6 +2,12 @@
 
 .container {
 	&_header {
-		padding: 5%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 75px, 1fr;
 	}
 }

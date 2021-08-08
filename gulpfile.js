@@ -13,7 +13,6 @@ const postcss = require('gulp-postcss');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
-const autoprefixer = require('autoprefixer');
 const del = require('del');
 
 function clean() {
@@ -83,11 +82,6 @@ function style() {
         .pipe(debug({
             title: 'scss'
         }))
-        .pipe(postcss([
-            autoprefixer({
-                grid: true
-            })
-        ]))
         .pipe(gulp.dest('dist/css'))
         .pipe(csso())
         .pipe(rename('style.min.css'))

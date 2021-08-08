@@ -2,6 +2,9 @@
 
 .nav {
 	&_header {
-		display: grid;
+		display: none;
+	}
+	&_header--open {
+		display: block;
 	}
 }

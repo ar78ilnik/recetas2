@@ -4,12 +4,14 @@
 	&_nav {
 		stroke: var(--basic-black);
 	}
-	&_nav-menu,
-	&_nav-open &_nav-cross {
-		display: block;
-	}
-	&_nav-cross,
-	&_nav-open &_nav-menu {
-		display: none;
-	}
+}
+
+.icon_nav-menu,
+.button_nav--open .icon_nav-cross {
+	display: block;
+}
+
+.icon_nav-cross,
+.button_nav--open .icon_nav-menu {
+	display: none;
 }
