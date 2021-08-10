@@ -7,3 +7,19 @@
 		list-style: none;
 	}
 }
+
+@media (min-width: 768px) {
+	.list {
+		&_header {
+			height: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		&_item {
+			flex-grow: 1;
+		}
+		&_link {
+			vertical-align: center;
+		}
+	}
+}
