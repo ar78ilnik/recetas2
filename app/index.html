@@ -8,17 +8,15 @@
     </head>
     <body class="page__body">
         @@include('html_components/_header.html')
-        <script>
-        (() => {
-        const buttonNav = document.querySelector('.button_nav');
-        const navHeader = document.querySelector('.nav_header');
-        buttonNav.addEventListener('click', () => {
-        let expanded = buttonNav.getAttribute('aria-expanded') === 'true' || false;
-        buttonNav.setAttribute('aria-expanded', !expanded);
-        buttonNav.classList.toggle('button_nav--open');
-        navHeader.classList.toggle('nav_header--open');
-        });
-        })();
-        </script>
+        <main class="main">
+            <article class="container container_full">
+                <picture>
+                    <source srcset="img/500_500.webp" media="(min-width: 600px)">
+                    <source srcset="img/500_500.avif" media="(min-width: 600px)">
+                    <img src="img/500_500.jpg" alt="">
+                </picture>
+            </article>
+        </main>
+        <script src="js/script.js"></script>
     </body>
 </html>

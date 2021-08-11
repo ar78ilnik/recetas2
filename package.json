@@ -3,6 +3,7 @@
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-avif": "^1.0.1",
     "gulp-csso": "^4.0.1",
     "gulp-debug": "^4.0.0",
     "gulp-file-include": "^2.3.0",

@@ -12,6 +12,7 @@ const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
+const avif = require('gulp-avif');
 const svgstore = require('gulp-svgstore');
 const del = require('del');
 
@@ -34,6 +35,12 @@ function toWebp() {
             quality: 70
         }))
         .pipe(gulp.dest('dist/img'))
+}
+
+function toAvif() {
+    return gulp.src('app/img/**/*.{jpg, png}')
+    .pipe(avif({quality: 50}))
+    .pipe(gulp.dest('dist/img'))
 }
 
 function jpg() {
@@ -108,7 +115,7 @@ function watch() {
     gulp.watch('app/scss/*.scss', style);
     gulp.watch('app/js/**/*.js', js);
     gulp.watch('app/fonts/*.{woff, woff2}', copy);
-    gulp.watch('app/img/**/*.*', jpg, toWebp, toPng, sprite);
+    gulp.watch('app/img/**/*.*', jpg, toWebp, toAvif, toPng, sprite);
 };
 
 function server() {
@@ -121,12 +128,13 @@ function server() {
     bs.watch('app/img/**/*.*').on('change', bs.reload);
 };
 
-const build = gulp.series(clean, copy, jpg, toWebp, toPng, sprite, style, js, html, gulp.parallel(watch, server));
+const build = gulp.series(clean, copy, jpg, toWebp, toAvif, toPng, sprite, style, js, html, gulp.parallel(watch, server));
 
 exports.clean = clean;
 exports.html = html;
 exports.jpg = jpg;
 exports.toWebp = toWebp;
+exports.toAvif = toAvif;
 exports.toPng = toPng;
 exports.js = js;
 exports.sprite = sprite;
