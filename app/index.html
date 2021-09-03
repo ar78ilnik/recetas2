@@ -7,16 +7,38 @@
         <title>Recetas</title>
     </head>
     <body class="page__body">
-        @@include('html_components/_header.html')
-        <main class="main">
-            <article class="container container_full">
-                <picture>
-                    <source srcset="img/500_500.webp" media="(min-width: 600px)">
-                    <source srcset="img/500_500.avif" media="(min-width: 600px)">
-                    <img src="img/500_500.jpg" alt="">
-                </picture>
-            </article>
-        </main>
-        <script src="js/script.js"></script>
+        <div class="container container_body">
+            @@include('html_components/_header.html')
+            <main class="main">
+                <h2 class="title title_h2">ПОСЛЕДНИЕ ПОСТЫ</h2>
+                <div class="container container_recipes">
+                    <div class="recipe">
+                        <div class="recipe__meta">
+                            <span class="title title_category">Десерты</span>
+                        </div>
+                        <img class="recipe__img" src="" alt="">
+                        <div class="recipe__share">
+                            <div class="recipe__likes">
+                                <div class="recipe__like">
+                                    
+                                </div>
+                                <div class="recipe__comment">
+                                    
+                                </div>
+                                <div class="recipe__links">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <article class="recipe__article">
+                            <h3 class="title title_h3">Флан (flan cacero)</h3>
+                            <p class="recipe__text">Были в Испании времена, когда это простое блюдо было королем в меню ресторанов Испании. В дальнейшем этот скромный десерт был изменен и дополнен шеф-поварами лучших ресторанов Испании. Кто-то заменял молоко на сливки или на их смесь. [...] </p>
+                        </article>
+                        <a href="#" class="recipe__more">продолжить чтение</a>
+                    </div>
+                </div>
+            </main>
+            <script src="js/script.js"></script>
+        </div>
     </body>
 </html>
