@@ -10,9 +10,12 @@
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 75px, 1fr;
 	}
+	&_full {
+		width: 100%;
+	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
 	.container {
 		&_header {
 			height: inherit;

@@ -6,10 +6,11 @@
 	}
 	&_header--open {
 		display: block;
+		background-color: var(--basic-white);
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
 	.nav {
 		&_header {
 			display: block;

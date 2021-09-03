@@ -8,7 +8,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
 	.list {
 		&_header {
 			height: 100%;
