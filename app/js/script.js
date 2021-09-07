@@ -1,10 +1,7 @@
-        (() => {
-        const buttonNav = document.querySelector('.button_nav');
-        const navHeader = document.querySelector('.nav_header');
-        buttonNav.addEventListener('click', () => {
-        let expanded = buttonNav.getAttribute('aria-expanded') === 'true' || false;
-        buttonNav.setAttribute('aria-expanded', !expanded);
-        buttonNav.classList.toggle('button_nav--open');
-        navHeader.classList.toggle('nav_header--open');
-        });
-        })();
+    var mainBlock = document.querySelector('.header__menu');
+    var svgImg = mainBlock.querySelector('.header__icon');
+    mainBlock.addEventListener('click', function() {
+        let expanded = mainBlock.getAttribute('aria-expanded') === 'true' || false;
+        mainBlock.setAttribute('aria-expanded', !expanded);
+        svgImg.classList.toggle('rotated');
+    });

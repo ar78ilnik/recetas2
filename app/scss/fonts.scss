@@ -1,0 +1,41 @@
+@font-face: {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswaldregular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face: {
+	font-family: 'RobotoCondensed';
+	src: local('Roboto Condensed'), url('../fonts/Robotocondensed.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face: {
+	font-family: 'RobotoCondensed';
+	src: local('Roboto Condensed Bold'), url('../fonts/Robotocondensedbold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face: {
+	font-family: 'Inter Regular';
+	src: local('Inter Regular'), url('../fonts/Inter-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face: {
+	font-family: 'Inter SemiBold';
+	src: local('Inter SemiBold'), url('../fonts/Inter-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face: {
+	font-family: 'CMU Sans Serif Demi Condensed';
+	src: local('CMU Sans Serif'), url('../fonts/cmunssdc.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}

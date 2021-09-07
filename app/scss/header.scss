@@ -1,0 +1,23 @@
+.header {
+	margin-bottom: 50px;
+	&__menu {
+		font-family: 'RobotoCondensed', sans-serif;
+		@include font(var(--14px-size), 16px, var(--title), 0.03em, 400);
+		text-transform: uppercase;
+		border-top: var(--basic-black) 1px solid;
+		border-bottom: var(--basic-black) 1px solid;
+		text-align: center;
+		padding: 10px 0 10px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__icon {
+		width: 15px;
+		height: 15px;
+		transform-origin: center;
+  		transform: rotate(-90deg);
+  		transition-property: transform;
+  		transition-duration: 1s;
+	}
+}

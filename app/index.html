@@ -12,9 +12,48 @@
             <main class="main">
                 <h2 class="title title_h2">ПОСЛЕДНИЕ ПОСТЫ</h2>
                 <div class="container container_recipes">
-                    <div class="recipe">
+                    <div class="card">
                         <div class="recipe__meta">
                             <span class="title title_category">Десерты</span>
+                            <svg class="recipe__dot" viewBox="0 0 5 5">
+                                <use xlink:href="img/sprite.svg#dot"></use>
+                            </svg>
+                            <span class="recipe__date">
+                                Июль 18, 2021г.
+                            </span>
+                        </div>
+                        <img class="recipe__img" src="img/post1-mobile.jpg" alt="" width="290" height="259">
+                        <div class="recipe__share">
+                            <div class="recipe__likes">
+                                <div class="recipe__like">
+                                    <svg class="recipe__icon" viewBox="0 0 10 10">
+                                        <use xlink:href="img/sprite.svg#like"></use>
+                                    </svg>
+                                    <span class="recipe__like-count">15</span>
+                                </div>
+                                <div class="recipe__comment">
+                                    <svg class="recipe__icon" viewBox="0 0 10 10">
+                                        <use xlink:href="img/sprite.svg#comment"></use>
+                                    </svg>
+                                    <span class="recipe__comment-count">6</span>
+                                </div>
+                                <div class="recipe__links">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <article class="recipe__article">
+                            <h3 class="title title_h3">Флан (flan cacero)</h3>
+                            <p class="recipe__text">Были в Испании времена, когда это простое блюдо было королем в меню ресторанов Испании. В дальнейшем этот скромный десерт был изменен и дополнен шеф-поварами лучших ресторанов Испании. Кто-то заменял молоко на сливки или на их смесь. [...] </p>
+                        </article>
+                        <a href="#" class="recipe__more">продолжить чтение</a>
+                    </div>
+                    <div class="card">
+                        <div class="recipe__meta">
+                            <span class="title title_category">Статья</span>
+                            <span class="recipe__date">
+                                Июль 18, 2021г.
+                            </span>
                         </div>
                         <img class="recipe__img" src="" alt="">
                         <div class="recipe__share">
@@ -31,13 +70,110 @@
                             </div>
                         </div>
                         <article class="recipe__article">
-                            <h3 class="title title_h3">Флан (flan cacero)</h3>
-                            <p class="recipe__text">Были в Испании времена, когда это простое блюдо было королем в меню ресторанов Испании. В дальнейшем этот скромный десерт был изменен и дополнен шеф-поварами лучших ресторанов Испании. Кто-то заменял молоко на сливки или на их смесь. [...] </p>
+                            <h3 class="title title_h3">Мифы и легенды валенсийской паэльи: что правда, а что фольклор и как приготовить отличную паэлью</h3>
+                            <p class="recipe__text">Согласно словарю Королевской Академии Испанского языка - паэлья это "блюдо из сухого риса с мясом, рыбой, морепродуктами, овощами и т.д. типичное для региона Валенсия, в Испании". [...] </p>
                         </article>
                         <a href="#" class="recipe__more">продолжить чтение</a>
                     </div>
+                    <div class="card">
+                        <div class="recipe__meta">
+                            <span class="title title_category">Статья</span>
+                            <span class="recipe__date">
+                                Июль 18, 2021г.
+                            </span>
+                        </div>
+                        <img class="recipe__img" src="" alt="">
+                        <div class="recipe__share">
+                            <div class="recipe__likes">
+                                <div class="recipe__like">
+                                    
+                                </div>
+                                <div class="recipe__comment">
+                                    
+                                </div>
+                                <div class="recipe__links">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <article class="recipe__article">
+                            <h3 class="title title_h3">Испанский гаспачо (Gazpacho andaluz)</h3>
+                            <p class="recipe__text">Когда приходит жаркое время года, нет ничего лучше чтобы начать обед, чем тарелочка холодного испанского супа Гаспачо (Gazpacho). Гаспачо - традиционное блюдо юга Испании.  Конечно же есть много разновидностей Гаспачо, [...] </p>
+                        </article>
+                        <a href="#" class="recipe__more">продолжить чтение</a>
+                    </div>
+                    <div class="recipe__pagination">
+                        <span class="recipe__pagination-elem">1</span>
+                        <span class="recipe__pagination-elem">2</span>
+                        <span class="recipe__pagination-elem">3</span>
+                        <span class="recipe__pagination-elem">Следующий</span>
+                        <span class="recipe__pagination-arrow">
+                            <svg class="recipe__icon_arrow" viewBox="0 0 10 10">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </span>
+                    </div>
                 </div>
+                <div class="search">
+                    <h2 class="title title_h2">НАЙДИТЕ ИДЕАЛЬНЫЙ РЕЦЕПТ:</h2>
+                    <form class="form form__search" action="">
+                        <label class="form__label">
+                            <input class="form__input" type="text" name="saerch-words" placeholder="Введите ключевые слова...">
+                        </label>
+                        <input type="submit" value="ПОИСК">
+                    </form>
+                </div>
+                <article class="card">
+                    <img src="" alt="">
+                    <h3 class="title title_h3">Hola!/Привет!</h3>
+                    <p class="card__text">Меня зовут Илья и я начал этот блог потому что хочу собрать и сохранить рецепты многочисленных регионов Испании, которые называют Испанская кухня [...]</p>
+                    <a href="#" class="recipe__more">подробнее</a>
+                </article>
+                <div class="search-alpha">
+                    <h2 class="title title_h2">поиск по алфавиту:</h2>
+                    <ul class="search-alpha__list">
+                        <li class="search-alpha__item">ГАСПАЧО</li>
+                        <li class="search-alpha__item">КАРПАЧО ИЗ КАБАЧКОВ</li>
+                        <li class="search-alpha__item">ФЛАН</li>
+                        <li class="search-alpha__item">ГАСПАЧО</li>
+                        <li class="search-alpha__item">ГАСПАЧО</li>
+                        <li class="search-alpha__item">ГАСПАЧО</li>
+                    </ul>
+                </div>
+                <section class="recipe-new">
+                    <h2 class="title title_h2">новые рецепты:</h2>
+                    <div class="recipe-new__item">
+                        <img src="" alt="">
+                        <div class="recipe-new__info">
+                            <h3 class="title title_h3">Флан (flan cacero)</h3>
+                            <span class="recipe__date">27 августа 2021г.</span>
+                        </div>
+                    </div>
+                    <div class="recipe-new__item">
+                        <img src="" alt="">
+                        <div class="recipe-new__info">
+                            <h3 class="title title_h3">Мифы и легенды валенсийской паэльи</h3>
+                            <span class="recipe__date">27 августа 2021г.</span>
+                        </div>
+                    </div>
+                    <div class="recipe-new__item">
+                        <img src="" alt="">
+                        <div class="recipe-new__info">
+                            <h3 class="title title_h3">Испанский салат с арбузными дольками</h3>
+                            <span class="recipe__date">27 августа 2021г.</span>
+                        </div>
+                    </div>
+                    <section class="tags">
+                        <h2 class="title title_h2">#теги:</h2>
+                        <div class="tags__items">#Ресторан — #Молоко — #Витамин_С #Фрукты — #Кофе — #Пирог — #Маски
+                        </div>
+                    </section>
+                </section>
             </main>
+            <footer class="footer">
+                <span class="footer__text">2021 Испанские рецепты</span>
+                <span class="footer__text">Все права защищены</span>
+            </footer>
             <script src="js/script.js"></script>
         </div>
     </body>

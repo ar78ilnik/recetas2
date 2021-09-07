@@ -1,0 +1,26 @@
+.title {
+	&_h1 {
+		font-family: Oswald, sans-serif;
+		@include font(var(--28px-size), 41px, var(--title), -0.1em, 400);
+		text-transform: uppercase;
+		padding: 32px auto;
+	}
+	&_promo {
+		font-family: 'CMU Sans Serif Demi Condensed', sans-serif;
+		@include font(var(--18px-size), 24px, var(--title), 0.1em, 600);
+	}
+	&_h2 {
+		font-family: 'RobotoCondensed', sans-serif;
+		@include font(var(--18px-size), 24px, var(--title), 0.1em, 600);
+		margin: 0;
+		margin-bottom: 40px;
+	}
+	&_h3 {
+		font-family: 'Inter SemiBold', sans-serif;
+		@include font(var(--18px-size), 150%, var(--title), 0.05em, 600);
+	}
+	&_category {
+		font-family: 'Inter Regular', sans-serif;
+		@include font(var(--12px-size), 150%, var(--title), 0.05em, 400);
+	}
+}

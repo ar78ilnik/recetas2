@@ -1,0 +1,12 @@
+.strelka {
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.rotated {
+	transform-origin: center;
+	transform: rotate(90deg);
+	transition-property: transform;
+	transition-duration: 1s;
+}
