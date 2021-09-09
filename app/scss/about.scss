@@ -1,0 +1,17 @@
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 42px;
+	background-color: var(--block-about);
+	background: linear-gradient(to bottom, var(--block-about) 25%, var(--basic-white) 75%);
+	&__text {
+		width: 252px;
+		font-family: 'Inter Light', sans-serif;
+		@include font(var(--16px-size), 24px, var(--title), 0.05em, 300);
+		margin-bottom: 40px;
+	}
+	&__img {
+		margin-bottom: 45px;
+	}
+}

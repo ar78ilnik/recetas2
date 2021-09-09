@@ -15,9 +15,15 @@
 		margin: 0;
 		margin-bottom: 40px;
 	}
+	&_search {
+		font-family: 'Inter', sans-serif;
+		@include font(var(--16px-size), 150%, var(--title), 0.05em, 500);
+		margin-bottom: 22px;
+	}
 	&_h3 {
 		font-family: 'Inter SemiBold', sans-serif;
 		@include font(var(--18px-size), 150%, var(--title), 0.05em, 600);
+		margin-bottom: 20px;
 	}
 	&_category {
 		font-family: 'Inter Regular', sans-serif;

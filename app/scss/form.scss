@@ -1,0 +1,25 @@
+.form {
+	&_search {
+	}
+	font-family: 'RobotoCondensed', sans-serif;
+	@include font(var(--14px-size), 150%, var(--title), 0.03em, 400);
+	&__label {
+		border: 1px var(--border-button) solid;
+		padding: 14px 65px 14px 14px;
+		border-radius: 20px;
+	}
+	&__input {
+		border: none;
+	}
+	&__submit {
+		position: absolute;
+		top: -13px;
+		right: 0;
+		font-family: 'RobotoCondensed', sans-serif;
+		@include font(var(--14px-size), 21px, var(--title), 0.03em, 700);
+		background-color: var(--basic-white);
+		border: 1px var(--border-button) solid;
+		padding: 12px 9px;
+		border-radius: 20px;
+	}
+}

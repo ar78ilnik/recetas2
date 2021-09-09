@@ -2,11 +2,20 @@
 
 .container {
 	&_body {
+		width: 100%;
+	}
+	&_main {
 		width: 290px;
 		margin: 0 auto;
 	}
 	&_title {
 		text-align: center;
 		margin-bottom: 30px;
+	}
+	&_recipes {
+		margin-bottom: 70px;
+	}
+	&_search {
+		position: relative;
 	}
 }
