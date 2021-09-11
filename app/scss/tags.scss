@@ -1,0 +1,7 @@
+.tags {
+	margin-bottom: 60px;
+	&__items {
+		font-family: 'Inter Regular', sans-serif;
+		@include font(var(--16px-size), 150%, var(--title), 0.05em, 400);
+	}
+}

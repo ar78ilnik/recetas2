@@ -13,7 +13,7 @@
                 <div class="container container_main">
                     <h2 class="title title_h2">ПОСЛЕДНИЕ ПОСТЫ</h2>
                     <div class="container container_recipes">
-                        <div class="card">
+                        <div class="card card_recipe">
                             <div class="recipe__meta">
                                 <span class="title title_category">Десерты</span>
                                 <svg class="recipe__dot" viewBox="0 0 5 5">
@@ -49,7 +49,7 @@
                             </article>
                             <a href="#" class="recipe__more">продолжить чтение</a>
                         </div>
-                        <div class="card">
+                        <div class="card card_recipe">
                             <div class="recipe__meta">
                                 <span class="title title_category">Статья</span>
                                 <span class="recipe__date">
@@ -60,10 +60,16 @@
                             <div class="recipe__share">
                                 <div class="recipe__likes">
                                     <div class="recipe__like">
-                                        
+                                        <svg class="recipe__icon" viewBox="0 0 10 10">
+                                            <use xlink:href="img/sprite.svg#like"></use>
+                                        </svg>
+                                        <span class="recipe__like-count">15</span>
                                     </div>
                                     <div class="recipe__comment">
-                                        
+                                        <svg class="recipe__icon" viewBox="0 0 10 10">
+                                            <use xlink:href="img/sprite.svg#comment"></use>
+                                        </svg>
+                                        <span class="recipe__comment-count">6</span>
                                     </div>
                                     <div class="recipe__links">
                                         
@@ -76,7 +82,7 @@
                             </article>
                             <a href="#" class="recipe__more">продолжить чтение</a>
                         </div>
-                        <div class="card">
+                        <div class="card card_recipe">
                             <div class="recipe__meta">
                                 <span class="title title_category">Статья</span>
                                 <span class="recipe__date">
@@ -87,10 +93,16 @@
                             <div class="recipe__share">
                                 <div class="recipe__likes">
                                     <div class="recipe__like">
-                                        
+                                        <svg class="recipe__icon" viewBox="0 0 10 10">
+                                            <use xlink:href="img/sprite.svg#like"></use>
+                                        </svg>
+                                        <span class="recipe__like-count">15</span>
                                     </div>
                                     <div class="recipe__comment">
-                                        
+                                        <svg class="recipe__icon" viewBox="0 0 10 10">
+                                            <use xlink:href="img/sprite.svg#comment"></use>
+                                        </svg>
+                                        <span class="recipe__comment-count">6</span>
                                     </div>
                                     <div class="recipe__links">
                                         
@@ -115,70 +127,83 @@
                             </span>
                         </div>
                     </div>
-                </div>
-                <article class="about">
-                    <h3 class="title title_h3">Hola!/Привет!</h3>
-                    <p class="about__text">Меня зовут Илья и я начал этот блог потому что хочу собрать и сохранить рецепты многочисленных регионов Испании, которые называют Испанская кухня [...]</p>
-                    <img class="about__img" src="../img/about.jpg" alt="" width="253" height="141">
-                    <a href="#" class="recipe__more">подробнее</a>
-                </article>
-                <div class="search">
-                    <h2 class="title title_search">НАЙДИТЕ ИДЕАЛЬНЫЙ РЕЦЕПТ:</h2>
-                    <form class="form form__search" action="">
-                        <div class="container container_search">
-                            <label class="form__label">
-                                <input class="form__input" type="text" name="saerch-words" placeholder="Введите ключевые слова...">
-                            </label>
-                            <input class="form__submit" type="submit" value="ПОИСК">
-                        </div>
-                    </form>
-                </div>
-                <div class="search-alpha">
-                    <h2 class="title title_h2">поиск по алфавиту:</h2>
-                    <ul class="search-alpha__list">
-                        <li class="search-alpha__item">ГАСПАЧО</li>
-                        <li class="search-alpha__item">КАРПАЧО ИЗ КАБАЧКОВ</li>
-                        <li class="search-alpha__item">ФЛАН</li>
-                        <li class="search-alpha__item">ГАСПАЧО</li>
-                        <li class="search-alpha__item">ГАСПАЧО</li>
-                        <li class="search-alpha__item">ГАСПАЧО</li>
-                    </ul>
-                </div>
-                <section class="recipe-new">
-                    <h2 class="title title_h2">новые рецепты:</h2>
-                    <div class="recipe-new__item">
-                        <img src="" alt="">
-                        <div class="recipe-new__info">
-                            <h3 class="title title_h3">Флан (flan cacero)</h3>
-                            <span class="recipe__date">27 августа 2021г.</span>
+                    <article class="about">
+                        <h3 class="title title_h3">Hola!/Привет!</h3>
+                        <p class="about__text">Меня зовут Илья и я начал этот блог потому что хочу собрать и сохранить рецепты многочисленных регионов Испании, которые называют Испанская кухня [...]</p>
+                        <img class="about__img" src="../img/about.jpg" alt="" width="253" height="141">
+                        <a href="#" class="recipe__more">подробнее</a>
+                    </article>
+                    <div class="search">
+                        <h2 class="title title_search">НАЙДИТЕ ИДЕАЛЬНЫЙ РЕЦЕПТ:</h2>
+                        <form class="form form__search" action="">
+                            <div class="container container_search">
+                                <label class="form__label">
+                                    <input class="form__input" type="text" name="saerch-words" placeholder="Введите ключевые слова...">
+                                </label>
+                                <input class="form__submit" type="submit" value="ПОИСК">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="search-alpha">
+                        <div class="container container_main">
+                            <h2 class="title title_h2">Поиск по алфавиту:</h2>
+                            <ul class="list search-alpha__list">
+                                <li class="list__item search-alpha__item">
+                                    <a class="link search-alpha__link" href="#">ГАСПАЧО</a>
+                                </li>
+                                <li class="list__item search-alpha__item">
+                                    <a class="link search-alpha__link" href="#">КАРПАЧО ИЗ КАБАЧКОВ</a>
+                                </li>
+                                <li class="list__item search-alpha__item">
+                                    <a class="link search-alpha__link" href="#">ФЛАН</a>
+                                </li>
+                                <li class="list__item search-alpha__item">
+                                    <a class="link search-alpha__link" href="#">ГАСПАЧО</a>
+                                </li>
+                                <li class="list__item search-alpha__item">
+                                    <a class="link search-alpha__link" href="#">ГАСПАЧО</a>
+                                </li>
+                                <li class="list__item search-alpha__item">
+                                    <a class="link search-alpha__link" href="#">ГАСПАЧО</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="recipe-new__item">
-                        <img src="" alt="">
-                        <div class="recipe-new__info">
-                            <h3 class="title title_h3">Мифы и легенды валенсийской паэльи</h3>
-                            <span class="recipe__date">27 августа 2021г.</span>
+                    <section class="recipe-new">
+                        <h2 class="title title_h2">Новые рецепты:</h2>
+                        <div class="recipe-new__item">
+                            <img class="recipe-new__img" src="img/new-1.jpg" alt="" width="100" height="75">
+                            <div class="recipe-new__info">
+                                <h3 class="title title_new">Флан (flan cacero)</h3>
+                                <span class="recipe__date">27 августа 2021г.</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="recipe-new__item">
-                        <img src="" alt="">
-                        <div class="recipe-new__info">
-                            <h3 class="title title_h3">Испанский салат с арбузными дольками</h3>
-                            <span class="recipe__date">27 августа 2021г.</span>
+                        <div class="recipe-new__item">
+                            <img class="recipe-new__img" src="img/new-2.jpg" alt="" width="100" height="75">
+                            <div class="recipe-new__info">
+                                <h3 class="title title_new">Мифы и легенды валенсийской паэльи</h3>
+                                <span class="recipe__date">27 августа 2021г.</span>
+                            </div>
                         </div>
-                    </div>
+                        <div class="recipe-new__item">
+                            <img class="recipe-new__img" src="img/new-3.jpg" alt="" width="100" height="75">
+                            <div class="recipe-new__info">
+                                <h3 class="title title_new">Испанский салат с арбузными дольками</h3>
+                                <span class="recipe__date">27 августа 2021г.</span>
+                            </div>
+                        </div>
+                    </section>
                     <section class="tags">
                         <h2 class="title title_h2">#теги:</h2>
                         <div class="tags__items">#Ресторан — #Молоко — #Витамин_С #Фрукты — #Кофе — #Пирог — #Маски
                         </div>
                     </section>
-                </section>
-            </main>
-            <footer class="footer">
-                <span class="footer__text">2021 Испанские рецепты</span>
-                <span class="footer__text">Все права защищены</span>
-            </footer>
-            <script src="js/script.js"></script>
-        </div>
-    </body>
-</html>
+                </main>
+                <footer class="footer">
+                    <span class="footer__text">2021 Испанские рецепты</span>
+                    <span class="footer__text">Все права защищены</span>
+                </footer>
+                <script src="js/script.js"></script>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,16 @@
+.list {
+	list-style-type: none;
+	&__item {
+		padding-bottom: 15px;
+		padding-top: 15px;
+		border-bottom: 1px var(--border-button) solid;
+		&_menu {
+			padding-left: 15px;
+			display: flex;
+		}
+	}
+	&__icon {
+		width: 25px;
+		height: 25px;
+	}
+}

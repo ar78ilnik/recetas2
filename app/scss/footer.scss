@@ -1,0 +1,7 @@
+.footer {
+	background-color: var(--footer);
+	&__text {
+		font-family: 'Inter Regular', sans-serif;
+		@include font(var(--14px-size), 21px, var(--basic-white), 0.05em, 700);
+	}
+}

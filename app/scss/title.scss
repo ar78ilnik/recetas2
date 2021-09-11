@@ -23,10 +23,14 @@
 	&_h3 {
 		font-family: 'Inter SemiBold', sans-serif;
 		@include font(var(--18px-size), 150%, var(--title), 0.05em, 600);
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 	&_category {
 		font-family: 'Inter Regular', sans-serif;
 		@include font(var(--12px-size), 150%, var(--title), 0.05em, 400);
+	}
+	&_new {
+		font-family: 'Inter Regular', sans-serif;
+		@include font(var(--14px-size), 150%, var(--title), 0.05em, 600);
 	}
 }

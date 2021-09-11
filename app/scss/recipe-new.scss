@@ -1,0 +1,16 @@
+.recipe-new {
+	border-bottom: 1px var(--border-button) solid;
+	margin-bottom: 60px;
+	&__item {
+		display: flex;
+		margin-bottom: 25px;
+	}
+	&__img {
+		margin-right: 20px;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}

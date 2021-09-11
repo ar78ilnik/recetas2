@@ -1,0 +1,10 @@
+.menu {
+	&_main {
+		display: none;
+	}
+	&_opened {
+		display: block;
+		background-color: var(--block-about);
+		padding-top: 60px;
+	}
+}
