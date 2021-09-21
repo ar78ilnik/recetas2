@@ -1,8 +1,4 @@
 .recipe {
-	&__date {
-		font-family: 'RobotoCondensed', sans-serif;
-		@include font(var(--12px-size), 150%, var(--title), 0.05em, 400);
-	}
 	&__text {
 		font-family: Inter, sans-serif;
 		@include font(var(--16px-size), 150%, var(--text-color), 0.05em, 300);
@@ -24,6 +20,8 @@
 	&__meta {
 		margin-bottom: 10px;
 		width: 100%;
+		font-family: 'Inter Regular', sans-serif;
+		@include font(var(--12px-size), 150%, var(--title), 0.05em, 400);
 	}
 	&__dot {
 		width: 5px;
@@ -41,6 +39,11 @@
 	}
 	&__img {
 		margin-bottom: 15px;
+		width: 100%;
+		img {
+			width: inherit;
+			min-height: auto;
+		}
 	}
 	&__like {
 		width: 38px;
@@ -48,10 +51,18 @@
 		display: flex;
 		margin-right: 4px;
 	}
+	&__info {
+		display: none;
+	}
 	&__comment {
 		width: 33px;
 		height: 21px;
 		display: flex;
+	}
+	&__link {
+		font-family: 'RobotoCondensed', sans-serif;
+		@include font(var(--14px-size), 150%, var(--title), 0.03em, 400);
+		text-decoration: none;
 	}
 	&__like-count {
 		font-family: 'RobotoCondensed', sans-serif;
@@ -85,5 +96,37 @@
 		display: inline-block;
 		width: 30px;
 		height: 16px;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.recipe {
+		&__meta {
+			font-family: 'Inter Regular', sans-serif;
+			@include font(var(--16px-size), 150%, var(--title), 0.05em, 400);
+		}
+		&__likes {
+			margin-left: auto;
+		}
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			width: 145px;
+			font-family: 'RobotoCondensed', sans-serif;
+			@include font(var(--14px-size), 120%, var(--title), 0.05em, 400);
+			margin-bottom: 20px;
+		}
+		&__elem {
+			display: flex;
+			align-items: flex-end;
+		}
+		&__pagination {
+			width: 50%;
+		}
+		&__pagination-elem {
+			&_active {
+				padding: 2% 4%;
+			}
+		}
 	}
 }

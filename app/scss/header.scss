@@ -1,11 +1,14 @@
 .header {
 	margin-bottom: 50px;
+	&__nav {
+		display: none;
+	}
 	&__menu {
 		font-family: 'RobotoCondensed', sans-serif;
 		@include font(var(--14px-size), 16px, var(--title), 0.03em, 400);
 		text-transform: uppercase;
-		border-top: var(--basic-black) 1px solid;
-		border-bottom: var(--basic-black) 1px solid;
+		border-top: var(--title) 1px solid;
+		border-bottom: var(--title) 1px solid;
 		text-align: center;
 		padding: 10px 0 10px 0;
 		display: flex;
@@ -19,5 +22,14 @@
   		transform: rotate(-90deg);
   		transition-property: transform;
   		transition-duration: 1s;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.header {
+		&__nav {
+			display: block;
+			border-bottom: 1px var(--border-button) solid;
+		}
 	}
 }

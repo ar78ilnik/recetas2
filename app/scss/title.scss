@@ -25,12 +25,29 @@
 		@include font(var(--18px-size), 150%, var(--title), 0.05em, 600);
 		margin-bottom: 40px;
 	}
-	&_category {
-		font-family: 'Inter Regular', sans-serif;
-		@include font(var(--12px-size), 150%, var(--title), 0.05em, 400);
-	}
 	&_new {
 		font-family: 'Inter Regular', sans-serif;
 		@include font(var(--14px-size), 150%, var(--title), 0.05em, 600);
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.title {
+		&_h1 {
+			@include font(var(--62px-size), 92px, var(--title), -0.05em, 400);
+		}
+		&_promo {
+			@include font(var(--34px-size), 45px, var(--title), 0.1em, 400);
+		}
+		&_h2 {
+			font-family: 'RobotoCondensed', sans-serif;
+			@include font(var(--26px-size), 150%, var(--title), 0.05em, 600);
+			text-align: center;
+		}
+		&_h3 {
+			@include font(var(--24px-size), 150%, var(--title), 0.05em, 600);
+			margin-bottom: 20px;
+			order: 1;
+		}
 	}
 }

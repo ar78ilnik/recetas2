@@ -14,4 +14,34 @@
 	&__img {
 		margin-bottom: 45px;
 	}
+	&__more {
+		display: block;
+		width: 230px;
+		font-family: 'RobotoCondensed', sans-serif;
+		@include font(var(--14px-size), 150%, var(--title), 0.03em, 700);
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 15px 15px;
+		border: 1px var(--border-button) solid;
+		border-radius: 30px;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.about {
+		background: linear-gradient(to bottom, var(--basic-white), var(--basic-white) 25%, var(--block-about) 25%, var(--block-about));
+		margin-bottom: 70px;
+		&__text {
+			width: 89%;
+			order: 2;
+		}
+		&__img {
+			order: 0;
+		}
+		&__more {
+			order: 3;
+		}
+	}
 }

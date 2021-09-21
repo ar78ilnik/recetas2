@@ -5,17 +5,27 @@
 		width: 100%;
 	}
 	&_main {
-		width: 290px;
+		width: 90%;
 		margin: 0 auto;
 	}
 	&_title {
+		padding-top:30px;
 		text-align: center;
 		margin-bottom: 30px;
 	}
 	&_recipes {
+		width: 100%;
 		margin-bottom: 70px;
 	}
 	&_search {
 		position: relative;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.container {
+		&_main {
+			width: 95.833%;
+		}
 	}
 }

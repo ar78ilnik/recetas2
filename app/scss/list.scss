@@ -3,7 +3,6 @@
 	&__item {
 		padding-bottom: 15px;
 		padding-top: 15px;
-		border-bottom: 1px var(--border-button) solid;
 		&_menu {
 			padding-left: 15px;
 			display: flex;
@@ -12,5 +11,19 @@
 	&__icon {
 		width: 25px;
 		height: 25px;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.list {
+		&_nav {
+			display: flex;
+			justify-content: space-between;
+			width: 50%;
+			margin: 0 auto;
+		}
+		&__item_nav {
+			border: none;
+		}
 	}
 }

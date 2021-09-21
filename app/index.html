@@ -11,6 +11,14 @@
             @@include('html_components/_header.html')
             <main class="main">
                 <div class="container container_main">
+                    <section class="today">
+                        <span class="today__title">#Сегодня читают ></span>
+                        <div class="today__read">
+                            <span class="today__elem">#теги</span>
+                            <span class="today__elem">#теги</span>
+                            <span class="today__elem">#теги</span>
+                        </div>
+                    </section>
                     <h2 class="title title_h2">ПОСЛЕДНИЕ ПОСТЫ</h2>
                     <div class="container container_recipes">
                         <div class="card card_recipe">
@@ -23,7 +31,14 @@
                                     Июль 18, 2021г.
                                 </span>
                             </div>
-                            <img class="recipe__img" src="img/post1-mobile.jpg" alt="" width="290" height="259">
+                            <picture class="recipe__img">
+                                <source
+                                media="(min-width: 768px)"
+                                srcset="img/post1-tablet.jpg 736w"
+                                sizes="(min-width: 768px) 736px"
+                                />
+                                <img src="img/post1-mobile.jpg"/>
+                            </picture>
                             <div class="recipe__share">
                                 <div class="recipe__likes">
                                     <div class="recipe__like">
@@ -45,6 +60,24 @@
                             </div>
                             <article class="recipe__article">
                                 <h3 class="title title_h3">Флан (flan cacero)</h3>
+                                <div class="recipe__info">
+                                    <div class="recipe__elem">
+                                        <div class="icon icon_recipe">
+                                            <svg class="icon">
+                                                <use xlink:href="img/sprite.svg#time">
+                                            </svg>
+                                        </div>
+                                        <span class="recipe__time">минут</span>
+                                    </div>
+                                    <div class="recipe__elem">
+                                        <div class="icon icon_recipe">
+                                            <svg class="icon">
+                                                <use xlink:href="img/sprite.svg#kcal">
+                                            </svg>
+                                        </div>
+                                        <span class="recipe__time">ккал</span>
+                                    </div>
+                                </div>
                                 <p class="recipe__text">Были в Испании времена, когда это простое блюдо было королем в меню ресторанов Испании. В дальнейшем этот скромный десерт был изменен и дополнен шеф-поварами лучших ресторанов Испании. Кто-то заменял молоко на сливки или на их смесь. [...] </p>
                             </article>
                             <a href="#" class="recipe__more">продолжить чтение</a>
@@ -56,7 +89,14 @@
                                     Июль 18, 2021г.
                                 </span>
                             </div>
-                            <img class="recipe__img" src="img/post1-mobile.jpg" alt="" width="290" height="259">
+                            <picture class="recipe__img">
+                                <source
+                                media="(min-width: 736px)"
+                                srcset="img/post1-tablet.jpg 736w"
+                                sizes="(min-width: 768px) 736px"
+                                />
+                                <img src="img/post1-mobile.jpg"/>
+                            </picture>
                             <div class="recipe__share">
                                 <div class="recipe__likes">
                                     <div class="recipe__like">
@@ -89,7 +129,14 @@
                                     Июль 18, 2021г.
                                 </span>
                             </div>
-                            <img class="recipe__img" src="img/post1-mobile.jpg" alt="" width="290" height="259">
+                            <picture class="recipe__img">
+                                <source
+                                media="(min-width: 736px)"
+                                srcset="img/post1-tablet.jpg 736w"
+                                sizes="(min-width: 768px) 736px"
+                                />
+                                <img src="img/post1-mobile.jpg"/>
+                            </picture>
                             <div class="recipe__share">
                                 <div class="recipe__likes">
                                     <div class="recipe__like">
@@ -116,22 +163,39 @@
                             <a href="#" class="recipe__more">продолжить чтение</a>
                         </div>
                         <div class="recipe__pagination">
-                            <span class="recipe__pagination-elem recipe__pagination-elem_active">1</span>
-                            <span class="recipe__pagination-elem">2</span>
-                            <span class="recipe__pagination-elem">3</span>
-                            <span class="recipe__pagination-elem">Следующий</span>
+                            <span class="recipe__pagination-elem recipe__pagination-elem_active">
+                                <a class="recipe__link" href="#">1</a>
+                            </span>
+                            <span class="recipe__pagination-elem">
+                                <a class="recipe__link" href="#">2</a>
+                            </span>
+                            <span class="recipe__pagination-elem">
+                                <a class="recipe__link" href="#">3</a>
+                            </span>
+                            <span class="recipe__pagination-elem">
+                                <a class="recipe__link" href="#">Следующий</a>
+                            </span>
                             <span class="recipe__pagination-arrow">
-                                <svg class="recipe__icon_arrow" viewBox="0 2 10 10">
-                                    <use xlink:href="img/sprite.svg#arrow"></use>
-                                </svg>
+                                <a class="recipe__link" href="#">
+                                    <svg class="recipe__icon_arrow" viewBox="0 2 10 10">
+                                        <use xlink:href="img/sprite.svg#arrow"></use>
+                                    </svg>
+                                </a>
                             </span>
                         </div>
                     </div>
                     <article class="about">
                         <h3 class="title title_h3">Hola!/Привет!</h3>
                         <p class="about__text">Меня зовут Илья и я начал этот блог потому что хочу собрать и сохранить рецепты многочисленных регионов Испании, которые называют Испанская кухня [...]</p>
-                        <img class="about__img" src="../img/about.jpg" alt="" width="253" height="141">
-                        <a href="#" class="recipe__more">подробнее</a>
+                        <picture class="about__img">
+                            <source
+                            media="(min-width: 768px)"
+                            srcset="img/about-tablet.jpg 394w"
+                            sizes="(min-width: 768px) 394px"
+                            />
+                            <img src="img/about.jpg"/>
+                        </picture>
+                        <a href="#" class="about__more">подробнее</a>
                     </article>
                     <div class="search">
                         <h2 class="title title_search">НАЙДИТЕ ИДЕАЛЬНЫЙ РЕЦЕПТ:</h2>
@@ -144,6 +208,7 @@
                             </div>
                         </form>
                     </div>
+                    @@include('html_components/_category.html')
                     <div class="search-alpha">
                         <div class="container container_main">
                             <h2 class="title title_h2">Поиск по алфавиту:</h2>
