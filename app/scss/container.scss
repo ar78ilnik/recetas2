@@ -1,9 +1,11 @@
 /* Container */
 
 .container {
-	&_body {
-		width: 100%;
-	}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 50px;
 	&_main {
 		width: 90%;
 		margin: 0 auto;
@@ -11,11 +13,6 @@
 	&_title {
 		padding-top:30px;
 		text-align: center;
-		margin-bottom: 30px;
-	}
-	&_recipes {
-		width: 100%;
-		margin-bottom: 70px;
 	}
 	&_search {
 		position: relative;

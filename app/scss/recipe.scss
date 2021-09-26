@@ -1,27 +1,21 @@
 .recipe {
+	&__date {
+		font-family: 'Inter Regular', sans-serif;
+		@include font(var(--12px-size), 150%, var(--title), 0.05em, 400);
+	}
+	&__img {
+		display: block;
+		margin-bottom: 15px;
+		width: 100%;
+		img {
+			width: inherit;
+			min-height: auto;
+		}
+	}
 	&__text {
 		font-family: Inter, sans-serif;
 		@include font(var(--16px-size), 150%, var(--text-color), 0.05em, 300);
 		margin-bottom: 70px;
-	}
-	&__more {
-		display: block;
-		width: 230px;
-		font-family: 'RobotoCondensed', sans-serif;
-		@include font(var(--14px-size), 150%, var(--title), 0.03em, 700);
-		text-transform: uppercase;
-		text-decoration: none;
-		padding: 15px 15px;
-		border: 1px var(--border-button) solid;
-		border-radius: 30px;
-		text-align: center;
-		margin-bottom: 60px;
-	}
-	&__meta {
-		margin-bottom: 10px;
-		width: 100%;
-		font-family: 'Inter Regular', sans-serif;
-		@include font(var(--12px-size), 150%, var(--title), 0.05em, 400);
 	}
 	&__dot {
 		width: 5px;
@@ -33,31 +27,31 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	&__share {
-		margin-bottom: 35px;
-		width: 100%;
-	}
-	&__img {
-		margin-bottom: 15px;
-		width: 100%;
-		img {
-			width: inherit;
-			min-height: auto;
-		}
-	}
 	&__like {
 		width: 38px;
 		height: 21px;
 		display: flex;
+		justify-content: space-between;
 		margin-right: 4px;
 	}
 	&__info {
-		display: none;
+		justify-content: space-between;
+		width: 145px;
+		font-family: 'RobotoCondensed', sans-serif;
+		@include font(var(--14px-size), 120%, var(--title), 0.05em, 400);
+		margin-bottom: 20px;
+		&_index {
+			display: none;
+		}
+		&_reseta {
+			display: flex;
+		}
 	}
 	&__comment {
 		width: 33px;
 		height: 21px;
 		display: flex;
+		justify-content: space-between;
 	}
 	&__link {
 		font-family: 'RobotoCondensed', sans-serif;
@@ -109,12 +103,9 @@
 			margin-left: auto;
 		}
 		&__info {
-			display: flex;
-			justify-content: space-between;
-			width: 145px;
-			font-family: 'RobotoCondensed', sans-serif;
-			@include font(var(--14px-size), 120%, var(--title), 0.05em, 400);
-			margin-bottom: 20px;
+&_index {
+	display: flex;
+}
 		}
 		&__elem {
 			display: flex;

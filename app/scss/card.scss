@@ -1,8 +1,6 @@
 .card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	border-bottom: 1px var(--border-button) solid;
-	&_recipe {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 }

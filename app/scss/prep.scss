@@ -1,0 +1,15 @@
+.prep {
+	font-family: 'Inter', sans-serif;
+	@include font(var(--16px-size), 24px, var(--text-color), 0.05em, 400);
+	&__item {
+		margin-bottom: 30px;
+	}
+	&__number {
+		width: 30px;
+		height: auto;
+		border: 2px solid var(--border-button);
+		border-radius: 50%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}

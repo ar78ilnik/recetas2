@@ -1,0 +1,14 @@
+.button {
+	display: block;
+	width: 230px;
+	font-family: 'RobotoCondensed', sans-serif;
+	@include font(var(--14px-size), 150%, var(--title), 0.03em, 700);
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px 15px;
+	border: 1px var(--border-button) solid;
+	border-radius: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+	cursor: pointer;
+}

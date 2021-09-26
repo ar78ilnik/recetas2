@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="body">
+    <div class="container">
+      @@include('html_components/_header.html')
+      <main class="main">
+        <div class="container container_main">
+          <section class="main__blocks">
+            <div class="block">
+              <span class="recipe__date">Июль 18, 2021г.</span>
+            </div>
+            <picture class="block">
+              <source media="(min-width: 768px)" srcset="img/post1-tablet.jpg 736w" sizes="(min-width: 768px) 736px" />
+              <img class="recipe__img" src="img/post1-mobile.jpg" alt="post" />
+            </picture>
+            <div class="block">
+              <div class="recipe__likes">
+                <div class="recipe__like">
+                  <svg class="recipe__icon" viewBox="0 0 10 10">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                  <span class="recipe__like-count">15</span>
+                </div>
+                <div class="recipe__comment">
+                  <svg class="recipe__icon" viewBox="0 0 10 10">
+                    <use xlink:href="img/sprite.svg#comment"></use>
+                  </svg>
+                  <span class="recipe__comment-count">6</span>
+                </div>
+              </div>
+            </div>
+            <article class="block">
+              <h2 class="title title_h2">Флан (flan cacero)</h2>
+              <div class="recipe__info recipe__info_reseta">
+                <div class="recipe__elem">
+                  <div class="icon icon_recipe">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#time"></use>
+                    </svg>
+                  </div>
+                  <span class="recipe__time">минут</span>
+                </div>
+                <div class="recipe__elem">
+                  <div class="icon icon_recipe">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#kcal"></use>
+                    </svg>
+                  </div>
+                  <span class="recipe__time">ккал</span>
+                </div>
+              </div>
+              <p class="recipe__text">Были в Испании времена, когда это простое блюдо было королем в меню ресторанов Испании. В дальнейшем этот скромный десерт был изменен и дополнен шеф-поварами лучших ресторанов Испании. Кто-то заменял молоко на сливки или на их смесь</p>
+            </article>
+            <section class="block">
+              <div class="card">
+                <button class="button">Распечатать рецепт</button>
+                <a href="#" class="button">Заказать</a>
+              </div>
+            </section>
+            <section class="block prep">
+              <h3 class="title title_h3">Приготовление</h3>
+              <div class="prep__main">
+                <ol class="prep__list">
+                  <li class="prep__item">
+                    <div class="prep__article">
+                      <div class="prep__number">1</div>
+                      <p class="prep__text">Нагреваем молоко с корицей и кожей лимона. Когда начнет закипать, убираем с огня и даем остыть в течение 30 минут.</p>
+                    </div>
+                    <div class="prep__compl">
+                      <img src="" alt="">
+                    </div>
+                  </li>
+                  <li class="prep__item">
+                    <div class="prep__article">
+                      <div class="prep__number">2</div>
+                      <p class="prep__text">Нагреваем молоко с корицей и кожей лимона. Когда начнет закипать, убираем с огня и даем остыть в течение 30 минут.</p>
+                    </div>
+                    <div class="prep__compl">
+                      <h4 class="title title_h4">Хитрости при приготовлении</h4>
+                      <p class="prep__tricks">Когда я только учился этому рецепту, у меня получался флан с трещинами на поверхности. Это может происходить по двум причинам. Или не залили воды в поднос, или приготовили крем миксером, таким образом в креме остается воздух. Не надо взбивать, перемешивайте все ингредиенты. Не обязательно накрывать формочки фольгой, но нужно убедиться, чтобы вода не попала в крем.</p>
+                    </div>
+                  </li>
+                  <li class="prep__item">
+                    <div class="prep__article">
+                      <div class="prep__number">3</div>
+                      <p class="prep__text">Далее приготовим карамель. В кастрюлю поместим 4 столовых ложки сахара и такое же количество воды. На тихом огне доведем до кипения. Должна получится коричневая жидкость. Заливаем в формочки для флана, чтобы немного покрыть дно формочек. Затем неспеша заливаем наш крем. Формочки ставим на поднос с высокими бортами чтобы можно было залить водой, примерно с палец глубиной.</p>
+                    </div>
+                    <div class="prep__compl">
+                      <img src="" alt="">
+                    </div>
+                  </li>
+                  <li class="prep__item">
+                    <div class="prep__article">
+                      <div class="prep__number">4</div>
+                      <p class="prep__text">Далее ставим поднос в духовку на 25-30 минут или пробуя ввести палочку и она должна выйти сухой. Если вы уверены, что флан готов, оставьте его немного остыть и далее в холодильник на 24 часа</p>
+                    </div>
+                    <div class="prep__compl">
+                      <h4 class="title title_h4">С ЧЕМ ЛУЧШЕ СОЧЕТАТЬ ФЛАН И КАК ПОДАВАТЬ:</h4>
+                      <p class="prep__tricks">Флан можно подавать со сливками или с фруктами</p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+          </section>
+        </div>
+      </main>
+      <aside class="aside">
+        <section class="ingri">
+          <div class="container container_main">
+            <h3 class="title title_h3">Ингредиенты</h3>
+            <div class="ingri__persons">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+              <span class="ingri__numbers">8</span>
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+              порций
+            </div>
+            <ul class="ingri__list">
+              <li class="ingri__item">
+                <span class="ingri__elem">
+                  <span class="ingri__elem_left">Молоко</span>
+                  <span class="ingri__elem_right">0,5л</span>
+                </span>
+              </li>
+              <li class="ingri__item">
+                <span class="ingri__elem">
+                  <span class="ingri__elem_left">Сахар</span>
+                  <span class="ingri__elem_right">125гр</span>
+                </span>
+              </li>
+              <li class="ingri__item">
+                <span class="ingri__elem">
+                  <span class="ingri__elem_left">Яйца(среднего размера)</span>
+                  <span class="ingri__elem_right">3шт</span>
+                </span>
+              </li>
+              <li class="ingri__item">
+                <span class="ingri__elem">
+                  <span class="ingri__elem_left">Немного кожи лимона или апельсина</span>
+                  <span class="ingri__elem_right">1шт</span>
+                </span>
+              </li>
+              <li class="ingri__item">
+                <span class="ingri__elem">
+                  <span class="ingri__elem_left">Палочка корицы</span>
+                  <span class="ingri__elem_right">1шт</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="share">
+          <h3 class="title title_h3">ПОДЕЛИТЬСЯ РЕЦЕПТОМ</h3>
+          <div class="share__icons">
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#Facebook"></use>
+            </svg>
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#Instagram"></use>
+            </svg>
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#VK"></use>
+            </svg>
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#Pinterest"></use>
+            </svg>
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#Telegram"></use>
+            </svg>
+          </div>
+        </section>
+        <section class="category">
+          <h3 class="title title_h3">КАТЕГОРИИ</h3>
+          <ul class="list list_menu">
+            <li class="list__item list__item_menu">
+              <div class="list__icon">
+                <svg class="icon icon_category">
+                  <use xlink:href="img/sprite.svg#menu-cat-1"></use>
+                </svg>
+              </div>
+              <a href="#" class="link link_menu">СУПЫ</a>
+            </li>
+            <li class="list__item list__item_menu">
+              <div class="list__icon">
+                <svg class="icon icon_category">
+                  <use xlink:href="img/sprite.svg#menu-cat-2"></use>
+                </svg>
+              </div>
+              <a href="#" class="link link_menu">ЗАКУСКИ</a>
+            </li>
+            <li class="list__item list__item_menu">
+              <div class="list__icon">
+                <svg class="icon icon_category">
+                  <use xlink:href="img/sprite.svg#menu-cat-3"></use>
+                </svg>
+              </div>
+              <a href="#" class="link link_menu">САЛАТЫ</a>
+            </li>
+            <li class="list__item list__item_menu">
+              <div class="list__icon">
+                <svg class="icon icon_category">
+                  <use xlink:href="img/sprite.svg#menu-cat-4"></use>
+                </svg>
+              </div>
+              <a href="#" class="link link_menu">ВТОРЫЕ БЛЮДА</a>
+            </li>
+            <li class="list__item list__item_menu">
+              <div class="list__icon">
+                <svg class="icon icon_category">
+                  <use xlink:href="img/sprite.svg#menu-cat-5"></use>
+                </svg>
+              </div>
+              <a href="#" class="link link_menu">НАПИТКИ</a>
+            </li>
+            <li class="list__item list__item_menu">
+              <div class="list__icon">
+                <svg class="icon icon_category">
+                  <use xlink:href="img/sprite.svg#menu-cat-6"></use>
+                </svg>
+              </div>
+              <a href="#" class="link link_menu">ДЕСЕРТЫ</a>
+            </li>
+          </ul>
+        </section>
+        <section class="search-alpha">
+          <h2 class="title title_h2">Поиск по алфавиту:</h2>
+          <ul class="list list_alpha">
+            <li class="list__item list__item_alpha">
+              <a class="link link_search" href="#">ГАСПАЧО</a>
+            </li>
+            <li class="list__item list__item_alpha">
+              <a class="link link_search" href="#">КАРПАЧО ИЗ КАБАЧКОВ</a>
+            </li>
+            <li class="list__item list__item_alpha">
+              <a class="link link_search" href="#">ФЛАН</a>
+            </li>
+            <li class="list__item list__item_alpha">
+              <a class="link link_search" href="#">ГАСПАЧО</a>
+            </li>
+            <li class="list__item list__item_alpha">
+              <a class="link link_search" href="#">ГАСПАЧО</a>
+            </li>
+            <li class="list__item list__item_alpha">
+              <a class="link link_search" href="#">ГАСПАЧО</a>
+            </li>
+          </ul>
+        </section>
+        <section class="recipe-new">
+          <h2 class="title title_h2">Новые рецепты:</h2>
+          <div class="recipe-new__item">
+            <img class="recipe-new__img" src="img/new-1.jpg" alt="" width="100" height="75">
+            <div class="recipe-new__info">
+              <h3 class="title title_new">Флан (flan cacero)</h3>
+              <span class="recipe__date">27 августа 2021г.</span>
+            </div>
+          </div>
+          <div class="recipe-new__item">
+            <img class="recipe-new__img" src="img/new-2.jpg" alt="" width="100" height="75">
+            <div class="recipe-new__info">
+              <h3 class="title title_new">Мифы и легенды валенсийской паэльи</h3>
+              <span class="recipe__date">27 августа 2021г.</span>
+            </div>
+          </div>
+          <div class="recipe-new__item">
+            <img class="recipe-new__img" src="img/new-3.jpg" alt="" width="100" height="75">
+            <div class="recipe-new__info">
+              <h3 class="title title_new">Испанский салат с арбузными дольками</h3>
+              <span class="recipe__date">27 августа 2021г.1</span>
+            </div>
+          </div>
+        </section>
+        <section class="tags">
+          <h2 class="title title_h2">#теги:</h2>
+          <div class="tags__items">#Ресторан — #Молоко — #Витамин_С #Фрукты — #Кофе — #Пирог — #Маски
+          </div>
+        </section>
+      </aside>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
