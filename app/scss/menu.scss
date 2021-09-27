@@ -8,3 +8,11 @@
 		padding-top: 60px;
 	}
 }
+
+@media (min-width: $tablet-width) {
+	.menu {
+		&_main {
+			display: block;
+		}
+	}
+}

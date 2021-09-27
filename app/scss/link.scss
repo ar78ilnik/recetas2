@@ -9,3 +9,11 @@
 		width: 100%;
 	}
 }
+
+@media (min-width: $tablet-width) {
+	.link {
+		&_menu {
+			@include font(var(--14px-size), 24px, var(--title), 0.05em, 400);
+		}
+	}
+}

@@ -22,8 +22,17 @@
 			width: 50%;
 			margin: 0 auto;
 		}
+		&_menu {
+			display: flex;
+			flex-wrap: wrap;
+		}
 		&__item_nav {
 			border: none;
+			text-align: center;
+		}
+		&__icon {
+			width: 20px;
+			height: 20px;
 		}
 	}
 }

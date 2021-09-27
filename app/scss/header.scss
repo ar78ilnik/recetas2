@@ -1,4 +1,5 @@
 .header {
+	width: 87%;
 	margin-bottom: 50px;
 	&__nav {
 		display: none;
@@ -30,6 +31,9 @@
 		&__nav {
 			display: block;
 			border-bottom: 1px var(--border-button) solid;
+		}
+		&__menu {
+			display: none;
 		}
 	}
 }
