@@ -22,9 +22,16 @@
 			width: 50%;
 			margin: 0 auto;
 		}
+		&_main {
+			display: flex;
+			flex-direction: column;
+		}
 		&_menu {
 			display: flex;
 			flex-wrap: wrap;
+			border-top: 1px solid var(--border-button);
+			border-bottom: 1px solid var(--border-button);
+			justify-content: space-around;
 		}
 		&__item_nav {
 			border: none;
@@ -35,4 +42,7 @@
 			height: 20px;
 		}
 	}
+}
+
+@media (min-width: $desktop-width) {
 }

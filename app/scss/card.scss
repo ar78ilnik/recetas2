@@ -4,3 +4,9 @@
 	align-items: center;
 	border-bottom: 1px var(--border-button) solid;
 }
+
+@media (min-width: $tablet-width) {
+	.card {
+		margin-bottom: 60px;
+	}
+}

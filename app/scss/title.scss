@@ -33,6 +33,9 @@
 
 @media (min-width: $tablet-width) {
 	.title {
+		&_cat {
+			display: none;
+		}
 		&_h1 {
 			@include font(var(--62px-size), 92px, var(--title), -0.05em, 400);
 		}

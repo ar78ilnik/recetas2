@@ -98,14 +98,18 @@
 		&__meta {
 			font-family: 'Inter Regular', sans-serif;
 			@include font(var(--16px-size), 150%, var(--title), 0.05em, 400);
+			align-self: flex-start;
 		}
 		&__likes {
 			margin-left: auto;
 		}
 		&__info {
-&_index {
-	display: flex;
-}
+			&_index {
+				display: flex;
+			}
+		}
+		&__share {
+			align-self: flex-end;
 		}
 		&__elem {
 			display: flex;
