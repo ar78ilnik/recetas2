@@ -9,11 +9,16 @@
 		font-family: 'Inter', sans-serif;
 		margin-bottom: 40px;
 		@include font(var(--16px-size), 150%, var(--title), 0.05em, 500);
-		&__title {
-			flex-basis: 30%;
-		}
 		&_read {
 			flex-grow: 1;
 		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.today {
+		width: 430px;
+		align-self: flex-start;
+		justify-content: flex-start;
 	}
 }

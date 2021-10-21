@@ -13,16 +13,28 @@
 	&_title {
 		padding-top:30px;
 		text-align: center;
+		margin-bottom: 0;
 	}
 	&_search {
 		position: relative;
 	}
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
 	.container {
 		&_main {
-			width: 95.833%;
+			width: 80%;
+			display: grid;
+			grid-template-rows: 328px auto;
+			//grid-template-columns: 781px 407px;
+			grid-template-columns: 781px 407px;
+		}
+		&_alpha {
+			align-items: flex-start;
+		}
+		&_title {
+			padding-top: 0;
+			text-align: center;
 		}
 	}
 }

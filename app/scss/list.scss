@@ -1,10 +1,12 @@
 .list {
 	list-style-type: none;
+	&_main {
+		gap: 2%;
+	}
 	&__item {
 		padding-bottom: 15px;
 		padding-top: 15px;
 		&_menu {
-			padding-left: 15px;
 			display: flex;
 		}
 	}
@@ -19,15 +21,19 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		border-top: 1px solid var(--border-button);
-		border-bottom: 1px solid var(--border-button);
 		&_nav {
 			justify-content: space-between;
 			width: 50%;
 			margin: 0 auto;
 		}
+		&_main {
+			border-top: 1px solid var(--border-button);
+			border-bottom: 1px solid var(--border-button);
+		}
 		&_menu {
 			flex-direction: column;
+			border-top: 1px solid var(--border-button);
+			border-bottom: 1px solid var(--border-button);
 		}
 		&__item_nav {
 			border: none;

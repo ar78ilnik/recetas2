@@ -78,6 +78,13 @@
 		margin: 0 auto;
 		margin-top: 50px;
 	}
+	&__meta {
+		margin-bottom: 12px;
+		align-self: flex-start;
+	}
+	&__share {
+		align-self: flex-start;
+	}
 	&__pagination-elem {
 		font-family: 'RobotoCondensed', sans-serif;
 		@include font(var(--18px-size), 16px, var(--title), 0.03em, 400);
@@ -100,6 +107,7 @@
 			font-family: 'Inter Regular', sans-serif;
 			@include font(var(--16px-size), 150%, var(--title), 0.05em, 400);
 			align-self: flex-start;
+			margin-bottom: 40px;
 		}
 		&__likes {
 			margin-left: auto;

@@ -1,6 +1,5 @@
 .header {
 	width: 87%;
-	margin-bottom: 50px;
 	&__nav {
 		display: none;
 	}
@@ -35,5 +34,14 @@
 		&__menu {
 			display: none;
 		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.header {
+		width: 100%;
+		margin-bottom: 50px;
+		grid-column-start: 1;
+		grid-column-end: 3;
 	}
 }
